@@ -1,0 +1,242 @@
+body{
+    color: #121212 !important;
+}
+ul,li{
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+}
+img{
+	width: 100% !important;
+	height: 100% !important;
+	vertical-align: middle !important;
+    object-fit: cover !important;
+}
+$font-14:14px;
+$font-16:16px;
+$font-20:20px;
+$font-24:24px;
+$font-32:32px;
+$font-40:40px;
+$font-48:48px;
+
+@mixin pad {
+    @media (max-width:768px){
+        @content
+    }
+}
+
+h2{
+    font-size: $font-48 !important;
+}
+h1{
+    font-family: 'Raleway', sans-serif !important;
+}
+// layout開始
+.newsletter{
+    padding: 84px 0px !important;
+    background: url(../img/newsletter.jpg)no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .input-color{
+        background: rgba(255, 255, 255, 0);
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:rgba(255, 255, 255, .6);
+    }
+    button{
+        @include pad{
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+        }
+    }
+}
+.index-footer{
+    h4{
+         font-family: 'Raleway', sans-serif !important;
+    }
+    li a{
+        font-size: $font-14;
+    }
+}
+.footer-nav{
+    h4,ul{
+        @include pad{
+            margin-bottom: 48px !important;
+        }
+    }
+}
+
+// layout結束
+
+//////////////////////// index.html開始
+
+// 表頭開始
+.index-header{
+    position: relative;
+    z-index: 10;
+}
+.index-h1 a{
+    @include pad{
+        color: white !important;
+    }
+}
+.index-list li:nth-child(1),
+.index-list li:nth-child(2),
+.index-list li:nth-child(3){
+    @include pad{
+        display: none !important;
+    }
+}
+
+// 漢堡列
+.index-hambuger{
+    display: none;
+    @include pad{
+        display: block;
+    }
+}
+// 下拉選單開始
+.index-dropdown{
+    position: absolute;
+    height: 100vh !important;
+    top:0;
+    left: -100%;
+    width: 100%;
+    transition: all .45s;
+    z-index: 20;
+    
+}
+.index-dropdown.active{
+   left: 0%; 
+}
+// banner開始
+.index-banner{
+    padding: 236px 0px ;
+    margin-top: -86px;
+    .txt{
+        @include pad{
+            color: white ;
+            text-align: center;
+        }
+    }
+    .btn-width{
+        @include pad{
+            width: 100%;
+        }
+    }
+    p{
+        font-size: $font-24 !important;
+        @include pad{
+         color: white !important;   
+        }
+    }
+    .bg{
+        background: url(../img/banner.jpg)no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        background-position: center center;
+        z-index: -50;
+    }
+}
+// banner結束
+
+// 特點開始
+.index-feature{
+    .txt{
+        width: 60%;
+        @include pad{
+            width: 100%;
+        }
+    }
+    h3{
+        font-size: $font-24 !important;
+    }
+    img{
+        height: 400px !important;
+    }
+}
+// 特點結束
+
+// Art Director開始
+.index-director{
+    padding: 150px 0px !important;
+    background: url(../img/director.jpg)no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include pad{
+        padding: 24px 0px !important;
+    }
+
+    p{
+        margin-bottom: 4px !important;
+    }
+    h2{
+        font-size: $font-32 !important;
+        @include pad{
+            margin-bottom: 125px !important;
+        }
+    }
+    h3{
+        margin-bottom: 16px !important;
+    }
+    
+}
+// Art Director結束
+
+// card開始
+.index-card{
+    overflow-x: hidden;
+    .img{
+        margin-bottom: 8px !important;
+    }
+    .swiper-container{
+        width: 100vw !important;
+    }
+
+    cursor: pointer !important;
+    img{
+        height: 350px !important;
+    }
+    h4{
+        margin-bottom: 4px !important;
+        font-size: $font-24 !important;
+    }
+    li{
+        margin-right:30px !important;
+    }
+    li:last-child{
+        margin-right: 0 !important;
+    }
+}
+// card結束
+// modal開始
+ .modal.right .modal-dialog { //增加層級才能覆蓋
+		position: fixed;
+        right:0;
+        top:0 !important;
+        bottom: 0 !important;
+		margin: auto;
+        width: 100%;
+		height: 100%;
+		transform: translate3d(0%, 0, 0);
+	}
+.modal-dialog{
+        max-width: 540px !important;
+    }
+.modal.right .modal-content {
+		height: 100%;
+	}
+.cart-close {
+    font-size: 48px !important;
+}
+
+.modal-footer .btn{
+    width: 70%;
+}
+// modal結束
+
+

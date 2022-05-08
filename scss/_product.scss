@@ -1,0 +1,86 @@
+
+.menu{
+    a{
+        font-size: $font-24;
+        @include pad{
+            font-size: $font-16;
+            
+        }
+    }
+    li{
+      @include pad{
+        margin-right: 24px !important;
+      }  
+    }
+}
+.product-h1 a{
+    @include pad{
+        color:#121212 !important ;
+    }
+}
+.product{
+    padding: 48px 0px 72px 0px !important;
+    @include pad{
+        padding: 24px 0px 48px 0px !important;
+    }
+    .product-card{
+    column-count: 3 !important ;
+    column-gap: 24px !important;
+    @include pad{
+        column-count: 2 !important;
+        column-gap:8px !important;
+        margin-bottom: 24px !important;
+    }
+    }
+    li{
+        break-inside: avoid !important;
+    }
+    .card{
+        border: none !important;
+    }
+    .card-body{
+        @include pad{
+            padding-bottom: 24px !important;
+        }
+    }
+    .c1{
+        height: 350px !important;
+    }
+    .c5{
+        height: 480px !important;
+    }
+    .c4,.c6{
+        height: 240px !important;
+    }
+    .c6{
+       height: 240px !important; 
+    }
+    .c3{
+        height: 350px !important;
+    }
+    .c7{
+        height: 480px !important;
+    }
+    .c8{
+        height: 480px !important;
+    }
+    .c9{
+        height: 240px !important;
+    }
+    .c2{
+        height: 350px !important;
+    }
+    .card img{
+        @include pad{
+            height: 160px !important;
+        }
+    }
+    .pagination{
+        span,a{
+            font-size: $font-24;
+        }
+        span{
+            text-decoration: underline !important;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.welldown-header{
+    
+    h1 a{
+        position: relative;
+        z-index: 1;
+        @include pad{
+            color:white !important;
+        }
+    }
+}
+.welldown-banner{
+    .bg{
+        background: url(../img/welldown.jpg)no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+    .txt{
+        @include pad{
+            text-align: center !important;
+        }
+    }
+    h2{
+        @include pad{
+            color:white ;
+        }
+    }
+    .welldown-btn{
+        @include pad{
+            width: 100%;
+        }
+    }
+}

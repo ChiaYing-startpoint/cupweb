@@ -1,0 +1,25 @@
+// Required
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import"variables";  /*改顏色，間距*/
+@import "../node_modules/bootstrap/scss/mixins";
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+// 字體
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+//page
+@import"index";
+@import"product";
+@import"digital";
+@import"information";
+@import"welldown";
+
+//plugin
+@import"swiper";
+
+
+
+
+
+
+

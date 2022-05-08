@@ -1,0 +1,10 @@
+.swiper-container {
+   width:100%;
+  margin: 0 auto;
+}
+
+/* 讓圖片符合容器 */
+.swiper-container .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}

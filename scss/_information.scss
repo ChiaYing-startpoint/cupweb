@@ -1,0 +1,61 @@
+.information{
+    padding-bottom: 160px;
+    @include pad{
+        padding-bottom: 0px;
+    }
+    .information-input{
+        h4,.email-label{
+            font-size: $font-20;
+        }
+    }
+    
+    .information-tag{
+        font-size: $font-14;
+        @include pad{
+            flex-direction: column;
+        }
+        li{
+            @include pad{
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+    .form-check-input:checked{
+        background-color:#0E8A00;
+        border-color: #0E8A00;
+    }
+    img{
+        height: 48px !important;
+        width: 48px !important;
+    }
+}
+
+.information-content{
+    @include pad{
+        flex-direction: column-reverse;
+    }
+}
+.information-detail{
+    @include pad{
+        margin-bottom: 32px;
+    }
+}
+.information-dropdown{
+   display: none !important;
+   @include pad{
+       display: flex !important;
+   }
+    
+}
+.information-dropdown-content{
+    @include pad{
+       display: none; 
+    }
+}
+.information-dropdown-content.active{
+    display: block;
+}
+
+.infomation-btn.active{
+    transform: rotate(180deg);
+}

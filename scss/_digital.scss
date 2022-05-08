@@ -1,0 +1,56 @@
+.dital{
+    .page-link{
+        border: none !important;
+    }
+    .img-item{
+        @include pad{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            height: 360px;
+        }
+    }
+   
+    .txt-item{
+        @include pad{
+            transform: translateX(0px);
+        }
+        transform: translateX(-82px);
+        }
+    .txt{
+        @include pad{
+            margin-top: -32px;
+            padding-right: 24px !important;
+        }
+    }
+    .txt h2{
+       @include pad{
+           margin-top: -20px;
+           font-size: $font-40 !important;
+           margin-bottom: 24px;
+       }
+    }
+    
+        
+    .introduction{
+        font-size: $font-20;
+    }
+    .btn-style{
+        @include pad{
+            position: absolute;
+            top: 74px;
+        }
+    }
+    .btn-cart{
+        @include pad{
+            margin-left:0px !important ;
+            padding: 16px 0px !important;
+        }
+    }
+}
+
+.dital-card{
+    h3{
+        font-size: $font-32;
+    }
+    
+}
